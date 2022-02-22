@@ -1,4 +1,3 @@
-mysqldump: [Warning] Using a password on the command line interface can be insecure.
 -- MySQL dump 10.13  Distrib 8.0.28, for Linux (x86_64)
 --
 -- Host: localhost    Database: wordpress
@@ -411,4 +410,3 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2022-02-11 14:43:07
-Unable to close the console
