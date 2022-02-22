@@ -26,7 +26,7 @@ function func_newsletter_form(){
           <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <form action="" method="">
-                        <input type="email" name="email" placeholder="E-mail"><input type="submit" value="Get Your Ice-cream">
+                        <input id="newsletter-email" type="email" name="email" placeholder="E-mail"><input type="submit" value="Get Your Ice-cream">
                     </form>
                 </div>
           </div>

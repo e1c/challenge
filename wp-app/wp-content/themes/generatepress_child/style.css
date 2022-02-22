@@ -8,7 +8,22 @@
  Version:      0.1
 */
 
- #ice-main-slider h2 {
+@font-face {
+    font-family: "Futura";
+    src: url("assets/fonts/Futura\ Bold.ttf") format("truetype"),
+         url("assets/fonts/Futura\ Book.ttf") format("truetype"),
+         url("assets/fonts/Futura\ Round.ttf") format("truetype"),
+         url("assets/fonts/Futura\ Std\ Book.ttf") format("truetype"),
+         url("assets/fonts/Futura\ Std\ Heavy.ttf") format("truetype"),
+         url("assets/fonts/Futura\ Thin.ttf") format("truetype");
+  }
+@font-face {
+    font-family: "Palatino";
+    src:
+         url("assets/fonts/Futura\ Palatino.ttf") format("truetype");
+  }
+
+#ice-main-slider h2 {
     font-weight: normal;
     font-size: 54px;
     line-height: 60px;
@@ -53,6 +68,7 @@
      padding: 10px;
      color: #fff;
      font-weight: bold;
+     height: 50px;
 }
  section#ice-main-slider .right-col img {
      margin-top: -80px;
@@ -86,7 +102,10 @@
 .main-navigation .main-nav ul li  {
     padding-left: 20px;
     padding-right: 15px;
+    display: inline-block;
+    margin-bottom: 20px;
 }
+/*
 li.menu-item:hover a:after ,
 li.current-menu-item a:after {
     content:"";
@@ -99,7 +118,7 @@ li.current-menu-item a:after {
     left:0;
     z-index:11;
 
-}
+}*/
 /*Newsletter Form*/
  #newsletter form {
      background: #fff;
@@ -118,8 +137,12 @@ li.current-menu-item a:after {
      width: calc(100% - 100px);
      height: 48px;
      font-size: 24px;
+     background: transparent;
 }
-
+#newsletter-email ::placeholder{
+    font-family: 'Palatino';
+    color:red;
+}
 
 input[type="email"] {}
  #newsletter form input[type="submit"] {
@@ -161,7 +184,8 @@ p{
  section#ice-survey {
      position: relative;
      margin-bottom: -170px;
-     padding-bottom: 200px;
+     padding-bottom: 150px;
+     padding-top: 0;
 }
 #ice-survey .left-col {
     max-width: 80%;
@@ -216,7 +240,7 @@ p{
 }
  span.wpcf7-form-control.wpcf7-radio.sellics-taste {
      display: inline-block;
-     height: 86px;
+     height: 100px;
      overflow-y: scroll;
      text-align: left;
      margin-left: 0;
@@ -225,9 +249,16 @@ p{
  span.wpcf7-form-control-wrap.Whichicecreamtastedoyoulike {
      display: block;
      text-align: left;
+     margin-top: 20px;
 }
  span.wpcf7-form-control-wrap.Whichicecreamtastedoyoulike ::-webkit-scrollbar{
      width: 8px;
+}
+span.wpcf7-list-item-label {
+    display: inline-block;
+    top: 0;
+    position: absolute;
+    left: 30px;
 }
 /* Track */
  span.wpcf7-form-control-wrap.Whichicecreamtastedoyoulike ::-webkit-scrollbar-track {
@@ -271,7 +302,7 @@ p{
      background: #fff;
      box-shadow: 5px 6px 9px rgba(0, 0, 0, 0.16);
      padding: 40px 20px;
-     margin-top: -100px;
+     margin-top: -50px;
      width: 500px;
      text-align: center;
 }
@@ -280,13 +311,14 @@ p{
 }
  label {
      text-align: left;
-     font-family: Futura;
+     font-family: 'Futura';
      font-weight: 500;
      font-size: 20px;
      text-align: left;
      width: 100%;
      color: #5ba5c6;
      display: block;
+     position: relative;
      float: left;
 }
  fieldset p {
@@ -305,7 +337,14 @@ p{
      background: #b6d7ff!important;
      border-radius: 30px;
      border-bottom: 0px;
-     color:#fff 
+     color:#fff ;
+     opacity:1
+}
+form.cf7mls input.wpcf7-form-control.wpcf7-submit:hover, 
+.fieldset-cf7mls .cf7mls_next:hover{
+  background: #6eb8d01f!important;
+  opacity: 1;
+  color:#67A9E5;
 }
  .wpcf7-form-control-wrap {
      position: relative;
@@ -314,3 +353,57 @@ p{
 *:focus {
     outline: none;
 }
+.main-navigation .main-nav>ul {
+    display: block;
+    /* flex-wrap: wrap; */
+}
+div#primary-menu {
+    width: 320px;
+    position: absolute;
+    top: -2px;
+}
+#menu-item-7:hover ~ hr {
+  margin-left: calc(33% - 10px);
+  width: 80px;
+  /* margin-left: 0px; */
+  margin-right: 25px;
+}
+#menu-item-51:hover ~ hr {
+  margin-left: calc(66% - 9px);
+  width: 65px;
+}
+
+#menu-main-menu hr{
+ height: 15px;
+ width: 60px;
+ margin: 0;
+ background: blue;
+ border: none;
+ z-index:2;
+ display:block;
+ position:relative;
+ border-radius: 15px!important;
+ margin-left: 12px;
+}
+#menu-main-menu .uno{
+    
+    opacity:1;
+    transition: .3s ease-in-out;
+   
+  }
+ #menu-main-menu .due{
+    opacity:0.6;
+    border: none;
+    transition: .5s ease-in-out;
+    margin-top: -15px!important;
+    z-index:2;
+  }
+#menu-main-menu  .tre{
+    
+    opacity:0.3;
+    transition: .7s ease-in-out;
+    margin-top:-15px;
+
+    z-index:1;
+  
+  }
