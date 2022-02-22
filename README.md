@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 # challenge
-||||||| merged common ancestors
-=======
 # WPDC - WordPress Docker Compose
 
 Easy WordPress development with Docker and Docker Compose.
@@ -161,4 +158,3 @@ wp plugin list
 You can also visit `http://127.0.0.1:8080` to access phpMyAdmin after starting the containers.
 
 The default username is `root`, and the password is the same as supplied in the `.env` file.
->>>>>>> bbc75f905af1883184d6da8dcaaba37d0cdd0b3b
