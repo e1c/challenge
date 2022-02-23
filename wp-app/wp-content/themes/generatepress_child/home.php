@@ -109,11 +109,21 @@ if( $ice_cream_columns ): ?>
 
 	<section class="grid-section" id="ice-footer">
         <div class="grid-container">
+             <div class="six-columns">
 <?      
-                    $footer_img = get_field('footer_img',$post_id,true);
-                    //echo $footer_img;
+                $footer_img_1 = get_field('footer_img',$post_id,true);
+                $footer_img_2 = get_field('footer_img_2',$post_id,true);
+                $footer_img_3 = get_field('footer_img_3',$post_id,true);
 ?>
-        <img src="<?php echo esc_url( $footer_img['url'] ); ?>" alt="<?php echo esc_attr( $footer_img['alt'] ); ?>" />
+               <div class="one-sixth ice-cream cream-1 pink"> <img src="<?php echo esc_url( $footer_img_1['url'] ); ?>" alt="<?php echo esc_attr( $footer_img_1['alt'] ); ?>" /> </div>
+               <div class="one-sixth ice-cream cream-2 yellow"> <img src="<?php echo esc_url( $footer_img_2['url'] ); ?>" alt="<?php echo esc_attr( $footer_img_2['alt'] ); ?>" /> </div>
+               <div class="one-sixth ice-cream cream-3 blue"> <img src="<?php echo esc_url( $footer_img_3['url'] ); ?>" alt="<?php echo esc_attr( $footer_img_3['alt'] ); ?>" /> </div>
+                
+               <div class="one-sixth ice-cream cream-4 pink"> <img src="<?php echo esc_url( $footer_img_1['url'] ); ?>" alt="<?php echo esc_attr( $footer_img_1['alt'] ); ?>" /> </div>
+               <div class="one-sixth ice-cream cream-5 yellow"> <img src="<?php echo esc_url( $footer_img_2['url'] ); ?>" alt="<?php echo esc_attr( $footer_img_2['alt'] ); ?>" /> </div>
+               <div class="one-sixth ice-cream cream-6 blue"> <img src="<?php echo esc_url( $footer_img_3['url'] ); ?>" alt="<?php echo esc_attr( $footer_img_3['alt'] ); ?>" /> </div>
+
+            </div>
         </div>
     </section>
 <?

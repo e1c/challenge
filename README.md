@@ -1,7 +1,4 @@
-# challenge
-# WPDC - WordPress Docker Compose
-
-Easy WordPress development with Docker and Docker Compose.
+# Ice Cream website challenge
 
 With this project you can quickly run the following:
 
@@ -26,12 +23,6 @@ Make sure to [add your user to the `docker` group](https://docs.docker.com/insta
 
 ## Configuration
 
-Copy the example environment into `.env`
-
-```
-cp env.example .env
-```
-
 Edit the `.env` file to change the default IP address, MySQL root password and WordPress database name.
 
 ## Installation
@@ -51,7 +42,6 @@ The containers are now built and running. You should be able to access the WordP
 
 For convenience you may add a new entry into your hosts file.
 
-## Usage
 
 ### Starting containers
 
@@ -107,23 +97,6 @@ define('WP_SITEURL','http://wp-app.local');
 ./export.sh
 ```
 
-### Developing a Theme
-
-Configure the volume to load the theme in the container in the `docker-compose.yml`:
-
-```
-volumes:
-  - ./theme-name/trunk/:/var/www/html/wp-content/themes/theme-name
-```
-
-### Developing a Plugin
-
-Configure the volume to load the plugin in the container in the `docker-compose.yml`:
-
-```
-volumes:
-  - ./plugin-name/trunk/:/var/www/html/wp-content/plugins/plugin-name
-```
 
 ### WP CLI
 
